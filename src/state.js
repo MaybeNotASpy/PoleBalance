@@ -3,10 +3,15 @@ class GameState {
         this.state = "start";
         this.mustReset = false;
         this.mustStart = false;
+        this.playTime = 0;
     }
 
     getState() {
         return this.state;
+    }
+
+    addTime(deltaT) {
+        this.playTime += deltaT;
     }
 
     gameReset() {
@@ -16,6 +21,7 @@ class GameState {
     gameStart() {
         this.state = "play";
         this.mustStart = false;
+        this.playTime = 0;
     }
 }
 

@@ -32,9 +32,10 @@ body {
     height: 408px;
   }
   
-  #pixiCanvas {
+  #matterCanvas {
     background: #CCF;
     box-sizing: border-box;
     border: 4px red dotted;
     display: block;
+    margin: 0 auto;
   }
